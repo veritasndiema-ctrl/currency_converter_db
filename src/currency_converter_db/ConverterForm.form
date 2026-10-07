@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" value="Currency Converter"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+        <Component id="pnlHeader" alignment="0" pref="900" max="32767" attributes="0"/>
+        <Group type="102" alignment="0" attributes="0">
+          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Component id="lblFrom" alignment="0" min="-2" max="-2" attributes="0"/>
+            <Component id="lblAmount" alignment="0" min="-2" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Component id="cmbFrom" alignment="0" min="-2" pref="260" max="-2" attributes="0"/>
+            <Component id="txtAmount" alignment="0" min="-2" pref="260" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Component id="btnSwap" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
+            <Component id="chkFee" alignment="0" min="-2" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Component id="lblTo" alignment="0" min="-2" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+          <Component id="cmbTo" min="-2" pref="260" max="-2" attributes="0"/>
+          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+        </Group>
+        <Group type="102" alignment="0" attributes="0">
+          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          <Component id="btnConvert" min="-2" pref="140" max="-2" attributes="0"/>
+          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+        </Group>
+        <Group type="102" alignment="0" attributes="0">
+          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+          <Component id="pnlResult" max="32767" attributes="0"/>
+          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+        </Group>
+        <Group type="102" alignment="0" attributes="0">
+          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+          <Component id="lblMsg" max="32767" attributes="0"/>
+          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+        </Group>
+        <Group type="102" alignment="0" attributes="0">
+          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+          <Component id="scrHistory" pref="840" max="32767" attributes="0"/>
+          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+        </Group>
+        <Group type="102" alignment="0" attributes="0">
+          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          <Component id="btnFavorite" min="-2" pref="180" max="-2" attributes="0"/>
+          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+          <Component id="btnAlert" min="-2" pref="160" max="-2" attributes="0"/>
+          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+          <Component id="btnReceipt" min="-2" pref="140" max="-2" attributes="0"/>
+          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+          <Component id="btnFullHistory" min="-2" pref="140" max="-2" attributes="0"/>
+          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+          <Component id="btnExit" min="-2" pref="100" max="-2" attributes="0"/>
+          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+        </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+        <Group type="102" alignment="0" attributes="0">
+          <Component id="pnlHeader" min="-2" max="-2" attributes="0"/>
+          <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="3" attributes="0">
+            <Component id="lblFrom" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="cmbFrom" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="btnSwap" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+            <Component id="lblTo" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="cmbTo" alignment="3" min="-2" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="3" attributes="0">
+            <Component id="lblAmount" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="txtAmount" alignment="3" min="-2" max="-2" attributes="0"/>
+            <Component id="chkFee" alignment="3" min="-2" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+          <Component id="btnConvert" min="-2" pref="36" max="-2" attributes="0"/>
+          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+          <Component id="pnlResult" min="-2" max="-2" attributes="0"/>
+          <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+          <Component id="lblMsg" min="-2" max="-2" attributes="0"/>
+          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+          <Component id="scrHistory" pref="150" max="32767" attributes="0"/>
+          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="3" attributes="0">
+            <Component id="btnFavorite" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+            <Component id="btnAlert" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+            <Component id="btnReceipt" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+            <Component id="btnFullHistory" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+            <Component id="btnExit" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+        </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="pnlHeader">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="93" green="52" red="00" type="rgb"/>
+        </Property>
+      </Properties>
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              <Component id="lblHeading" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <Component id="lblWho" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+            </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                <Component id="lblHeading" alignment="3" min="-2" max="-2" attributes="0"/>
+                <Component id="lblWho" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+            </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="lblHeading">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="22" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Currency Converter"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblWho">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="13" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="f0" green="dc" red="c8" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value=" "/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="lblFrom">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="SansSerif" size="13" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="From"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cmbFrom">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;Item&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnSwap">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="6e" green="64" red="5a" type="rgb"/>
+        </Property>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="focusPainted" type="boolean" value="false"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="SansSerif" size="13" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="opaque" type="boolean" value="true"/>
+        <Property name="text" type="java.lang.String" value="Swap"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSwapActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblTo">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="SansSerif" size="13" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="To"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cmbTo">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;Item&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblAmount">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="SansSerif" size="13" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Amount"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtAmount">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="100"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtAmountActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="chkFee">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="fa" green="f7" red="f4" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Apply conversion fee"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnConvert">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="50" green="82" red="00" type="rgb"/>
+        </Property>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="focusPainted" type="boolean" value="false"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="SansSerif" size="13" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="opaque" type="boolean" value="true"/>
+        <Property name="text" type="java.lang.String" value="Convert"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnConvertActionPerformed"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JPanel" name="pnlResult">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="f8" green="f1" red="ea" type="rgb"/>
+        </Property>
+      </Properties>
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblRateCaption" alignment="0" min="-2" max="-2" attributes="0"/>
+                <Component id="lblConvertedCaption" alignment="0" min="-2" max="-2" attributes="0"/>
+                <Component id="lblFeeCaption" alignment="0" min="-2" max="-2" attributes="0"/>
+                <Component id="lblNetCaption" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                <Component id="lblRate" alignment="0" max="32767" attributes="0"/>
+                <Component id="lblConverted" alignment="0" max="32767" attributes="0"/>
+                <Component id="lblFee" alignment="0" max="32767" attributes="0"/>
+                <Component id="lblNet" alignment="0" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+            </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+            <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                <Component id="lblRateCaption" alignment="3" min="-2" max="-2" attributes="0"/>
+                <Component id="lblRate" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                <Component id="lblConvertedCaption" alignment="3" min="-2" max="-2" attributes="0"/>
+                <Component id="lblConverted" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                <Component id="lblFeeCaption" alignment="3" min="-2" max="-2" attributes="0"/>
+                <Component id="lblFee" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                <Component id="lblNetCaption" alignment="3" min="-2" max="-2" attributes="0"/>
+                <Component id="lblNet" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+            </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="lblRateCaption">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="13" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Rate used"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblRate">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="-"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblConvertedCaption">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="13" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Converted amount"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblConverted">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="-"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblFeeCaption">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="13" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Fee"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblFee">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="-"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblNetCaption">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="13" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="You receive"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="lblNet">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="SansSerif" size="18" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="50" green="82" red="00" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="-"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="lblMsg">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="SansSerif" size="13" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="28" green="28" red="b4" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value=" "/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="scrHistory">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="My recent conversions"/>
+          </Border>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="tblHistory">
+          <Properties>
+            <Property name="rowHeight" type="int" value="22"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="btnFavorite">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="93" green="52" red="00" type="rgb"/>
+        </Property>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="focusPainted" type="boolean" value="false"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="SansSerif" size="13" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="opaque" type="boolean" value="true"/>
+        <Property name="text" type="java.lang.String" value="Add to Favorites"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnFavoriteActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnAlert">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="93" green="52" red="00" type="rgb"/>
+        </Property>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="focusPainted" type="boolean" value="false"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="SansSerif" size="13" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="opaque" type="boolean" value="true"/>
+        <Property name="text" type="java.lang.String" value="Set Rate Alert"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAlertActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnReceipt">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="50" green="82" red="00" type="rgb"/>
+        </Property>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="focusPainted" type="boolean" value="false"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="SansSerif" size="13" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="opaque" type="boolean" value="true"/>
+        <Property name="text" type="java.lang.String" value="Receipt PDF"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnReceiptActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnFullHistory">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="6e" green="64" red="5a" type="rgb"/>
+        </Property>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="focusPainted" type="boolean" value="false"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="SansSerif" size="13" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="opaque" type="boolean" value="true"/>
+        <Property name="text" type="java.lang.String" value="Full History"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnFullHistoryActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnExit">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="28" green="28" red="b4" type="rgb"/>
+        </Property>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="focusPainted" type="boolean" value="false"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="SansSerif" size="13" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="opaque" type="boolean" value="true"/>
+        <Property name="text" type="java.lang.String" value="Exit"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnExitActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
