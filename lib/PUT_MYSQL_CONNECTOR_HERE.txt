@@ -1,0 +1,5 @@
+Place mysql-connector-j-8.3.0.jar (or any 8.x version) in this folder.
+Download: https://dev.mysql.com/downloads/connector/j/  (choose "Platform Independent").
+If your jar has a different version number, in NetBeans: right-click Libraries > Add JAR/Folder.
+itextpdf-5.5.5.jar (PDF reports) is already included, taken from your OOP_JAVA class folder.
+Driver class used by the project: com.mysql.cj.jdbc.Driver
