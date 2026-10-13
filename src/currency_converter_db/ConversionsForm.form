@@ -7,6 +7,7 @@
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
   </SyntheticProperties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
@@ -19,70 +20,72 @@
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
   </AuxValues>
+
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-        <Component id="pnlHeader" alignment="0" pref="1060" max="32767" attributes="0"/>
-        <Component id="pnlFields" alignment="0" max="32767" attributes="0"/>
-        <Group type="102" alignment="0" attributes="0">
-          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-          <Component id="scrData" pref="1040" max="32767" attributes="0"/>
-          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-        </Group>
-        <Group type="102" alignment="0" attributes="0">
-          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-          <Component id="btnNew" min="-2" pref="90" max="-2" attributes="0"/>
-          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-          <Component id="btnSave" min="-2" pref="90" max="-2" attributes="0"/>
-          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-          <Component id="btnDelete" min="-2" pref="100" max="-2" attributes="0"/>
-          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-          <Component id="btnFind" min="-2" pref="90" max="-2" attributes="0"/>
-          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-          <Component id="btnFirst" min="-2" pref="110" max="-2" attributes="0"/>
-          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-          <Component id="btnPrevious" min="-2" pref="105" max="-2" attributes="0"/>
-          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-          <Component id="btnNext" min="-2" pref="105" max="-2" attributes="0"/>
-          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-          <Component id="btnLast" min="-2" pref="110" max="-2" attributes="0"/>
-          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-          <Component id="btnPreview" min="-2" pref="135" max="-2" attributes="0"/>
-          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-          <Component id="btnExit" min="-2" pref="90" max="-2" attributes="0"/>
-          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-        </Group>
-        <Group type="102" alignment="0" attributes="0">
-          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-          <Component id="lblStatusBar" max="32767" attributes="0"/>
-          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-        </Group>
+          <Component id="pnlHeader" alignment="0" max="32767" attributes="0"/>
+          <Component id="pnlFields" alignment="0" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+              <Component id="scrData" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <Component id="btnNew" min="-2" pref="90" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+              <Component id="btnSave" min="-2" pref="90" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+              <Component id="btnDelete" min="-2" pref="100" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+              <Component id="btnFind" min="-2" pref="90" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+              <Component id="btnFirst" min="-2" pref="110" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+              <Component id="btnPrevious" min="-2" pref="105" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+              <Component id="btnNext" min="-2" pref="105" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+              <Component id="btnLast" min="-2" pref="110" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+              <Component id="btnPreview" min="-2" pref="135" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+              <Component id="btnExit" min="-2" pref="90" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              <Component id="lblStatusBar" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-        <Group type="102" alignment="0" attributes="0">
-          <Component id="pnlHeader" min="-2" max="-2" attributes="0"/>
-          <Component id="pnlFields" min="-2" max="-2" attributes="0"/>
-          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-          <Component id="scrData" pref="260" max="32767" attributes="0"/>
-          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-          <Group type="103" groupAlignment="3" attributes="0">
-            <Component id="btnNew" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-            <Component id="btnSave" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-            <Component id="btnDelete" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-            <Component id="btnFind" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-            <Component id="btnFirst" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-            <Component id="btnPrevious" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-            <Component id="btnNext" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-            <Component id="btnLast" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-            <Component id="btnPreview" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-            <Component id="btnExit" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="pnlHeader" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+              <Component id="pnlFields" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+              <Component id="scrData" pref="260" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnNew" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="btnSave" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="btnDelete" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="btnFind" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="btnFirst" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="btnPrevious" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="btnNext" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="btnLast" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="btnPreview" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                  <Component id="btnExit" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+              <Component id="lblStatusBar" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
           </Group>
-          <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
-          <Component id="lblStatusBar" min="-2" max="-2" attributes="0"/>
-          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-        </Group>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -90,31 +93,32 @@
     <Container class="javax.swing.JPanel" name="pnlHeader">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="93" green="52" red="00" type="rgb"/>
+          <Color blue="93" green="52" red="0" type="rgb"/>
         </Property>
       </Properties>
+
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-            <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-              <Component id="lblHeading" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-              <Component id="lblWho" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-            </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                  <Component id="lblHeading" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Component id="lblWho" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-            <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                <Component id="lblHeading" alignment="3" min="-2" max="-2" attributes="0"/>
-                <Component id="lblWho" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lblHeading" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblWho" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-            </Group>
           </Group>
         </DimensionLayout>
       </Layout>
@@ -149,76 +153,76 @@
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
       </Properties>
+
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-            <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                <Component id="lblConversionId" alignment="0" min="-2" max="-2" attributes="0"/>
-                <Component id="lblBaseCurrencyId" alignment="0" min="-2" max="-2" attributes="0"/>
-                <Component id="lblAmount" alignment="0" min="-2" max="-2" attributes="0"/>
-                <Component id="lblRateUsed" alignment="0" min="-2" max="-2" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lblConversionId" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblBaseCurrencyId" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblAmount" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblRateUsed" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="txtConversionId" alignment="0" max="32767" attributes="0"/>
+                      <Component id="cmbBaseCurrencyId" alignment="0" max="32767" attributes="0"/>
+                      <Component id="txtAmount" alignment="0" max="32767" attributes="0"/>
+                      <Component id="txtRateUsed" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="lblUserId" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblTargetCurrencyId" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblConvertedAmount" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblConversionDate" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="cmbUserId" alignment="0" max="32767" attributes="0"/>
+                      <Component id="cmbTargetCurrencyId" alignment="0" max="32767" attributes="0"/>
+                      <Component id="txtConvertedAmount" alignment="0" max="32767" attributes="0"/>
+                      <Component id="txtConversionDate" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                <Component id="txtConversionId" alignment="0" pref="200" max="32767" attributes="0"/>
-                <Component id="cmbBaseCurrencyId" alignment="0" pref="200" max="32767" attributes="0"/>
-                <Component id="txtAmount" alignment="0" pref="200" max="32767" attributes="0"/>
-                <Component id="txtRateUsed" alignment="0" pref="200" max="32767" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                <Component id="lblUserId" alignment="0" min="-2" max="-2" attributes="0"/>
-                <Component id="lblTargetCurrencyId" alignment="0" min="-2" max="-2" attributes="0"/>
-                <Component id="lblConvertedAmount" alignment="0" min="-2" max="-2" attributes="0"/>
-                <Component id="lblConversionDate" alignment="0" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                <Component id="cmbUserId" alignment="0" pref="200" max="32767" attributes="0"/>
-                <Component id="cmbTargetCurrencyId" alignment="0" pref="200" max="32767" attributes="0"/>
-                <Component id="txtConvertedAmount" alignment="0" pref="200" max="32767" attributes="0"/>
-                <Component id="txtConversionDate" alignment="0" pref="200" max="32767" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-            </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-            <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                <Component id="lblConversionId" alignment="3" min="-2" max="-2" attributes="0"/>
-                <Component id="txtConversionId" alignment="3" min="-2" max="-2" attributes="0"/>
-                <Component id="lblUserId" alignment="3" min="-2" max="-2" attributes="0"/>
-                <Component id="cmbUserId" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lblConversionId" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtConversionId" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblUserId" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="cmbUserId" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lblBaseCurrencyId" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="cmbBaseCurrencyId" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblTargetCurrencyId" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="cmbTargetCurrencyId" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lblAmount" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtAmount" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblConvertedAmount" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtConvertedAmount" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lblRateUsed" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtRateUsed" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblConversionDate" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtConversionDate" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                <Component id="lblBaseCurrencyId" alignment="3" min="-2" max="-2" attributes="0"/>
-                <Component id="cmbBaseCurrencyId" alignment="3" min="-2" max="-2" attributes="0"/>
-                <Component id="lblTargetCurrencyId" alignment="3" min="-2" max="-2" attributes="0"/>
-                <Component id="cmbTargetCurrencyId" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                <Component id="lblAmount" alignment="3" min="-2" max="-2" attributes="0"/>
-                <Component id="txtAmount" alignment="3" min="-2" max="-2" attributes="0"/>
-                <Component id="lblConvertedAmount" alignment="3" min="-2" max="-2" attributes="0"/>
-                <Component id="txtConvertedAmount" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                <Component id="lblRateUsed" alignment="3" min="-2" max="-2" attributes="0"/>
-                <Component id="txtRateUsed" alignment="3" min="-2" max="-2" attributes="0"/>
-                <Component id="lblConversionDate" alignment="3" min="-2" max="-2" attributes="0"/>
-                <Component id="txtConversionDate" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
-            </Group>
           </Group>
         </DimensionLayout>
       </Layout>
@@ -318,6 +322,7 @@
       <AuxValues>
         <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
       </AuxValues>
+
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
         <Component class="javax.swing.JTable" name="tblData">
@@ -330,18 +335,18 @@
     <Component class="javax.swing.JButton" name="btnNew">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="50" green="82" red="00" type="rgb"/>
+          <Color blue="50" green="82" red="0" type="rgb"/>
         </Property>
-        <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="focusPainted" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="SansSerif" size="13" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="opaque" type="boolean" value="true"/>
         <Property name="text" type="java.lang.String" value="New"/>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="focusPainted" type="boolean" value="false"/>
+        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNewActionPerformed"/>
@@ -350,18 +355,18 @@
     <Component class="javax.swing.JButton" name="btnSave">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="93" green="52" red="00" type="rgb"/>
+          <Color blue="93" green="52" red="0" type="rgb"/>
         </Property>
-        <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="focusPainted" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="SansSerif" size="13" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="opaque" type="boolean" value="true"/>
         <Property name="text" type="java.lang.String" value="Save"/>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="focusPainted" type="boolean" value="false"/>
+        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSaveActionPerformed"/>
@@ -372,16 +377,16 @@
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="28" green="28" red="b4" type="rgb"/>
         </Property>
-        <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="focusPainted" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="SansSerif" size="13" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="opaque" type="boolean" value="true"/>
         <Property name="text" type="java.lang.String" value="Delete"/>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="focusPainted" type="boolean" value="false"/>
+        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDeleteActionPerformed"/>
@@ -392,16 +397,16 @@
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="6e" green="64" red="5a" type="rgb"/>
         </Property>
-        <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="focusPainted" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="SansSerif" size="13" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="opaque" type="boolean" value="true"/>
         <Property name="text" type="java.lang.String" value="Find"/>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="focusPainted" type="boolean" value="false"/>
+        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnFindActionPerformed"/>
@@ -412,16 +417,16 @@
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="6e" green="64" red="5a" type="rgb"/>
         </Property>
-        <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="focusPainted" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="SansSerif" size="13" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="opaque" type="boolean" value="true"/>
         <Property name="text" type="java.lang.String" value="|&lt;  First"/>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="focusPainted" type="boolean" value="false"/>
+        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnFirstActionPerformed"/>
@@ -432,16 +437,16 @@
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="6e" green="64" red="5a" type="rgb"/>
         </Property>
-        <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="focusPainted" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="SansSerif" size="13" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="opaque" type="boolean" value="true"/>
         <Property name="text" type="java.lang.String" value="&lt;  Prev"/>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="focusPainted" type="boolean" value="false"/>
+        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPreviousActionPerformed"/>
@@ -452,16 +457,16 @@
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="6e" green="64" red="5a" type="rgb"/>
         </Property>
-        <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="focusPainted" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="SansSerif" size="13" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="opaque" type="boolean" value="true"/>
         <Property name="text" type="java.lang.String" value="Next  &gt;"/>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="focusPainted" type="boolean" value="false"/>
+        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNextActionPerformed"/>
@@ -472,16 +477,16 @@
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="6e" green="64" red="5a" type="rgb"/>
         </Property>
-        <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="focusPainted" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="SansSerif" size="13" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="opaque" type="boolean" value="true"/>
         <Property name="text" type="java.lang.String" value="Last  &gt;|"/>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="focusPainted" type="boolean" value="false"/>
+        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLastActionPerformed"/>
@@ -490,18 +495,18 @@
     <Component class="javax.swing.JButton" name="btnPreview">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="50" green="82" red="00" type="rgb"/>
+          <Color blue="50" green="82" red="0" type="rgb"/>
         </Property>
-        <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="focusPainted" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="SansSerif" size="13" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="opaque" type="boolean" value="true"/>
         <Property name="text" type="java.lang.String" value="Preview PDF"/>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="focusPainted" type="boolean" value="false"/>
+        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnPreviewActionPerformed"/>
@@ -512,16 +517,16 @@
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="28" green="28" red="b4" type="rgb"/>
         </Property>
-        <Property name="borderPainted" type="boolean" value="false"/>
-        <Property name="focusPainted" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="SansSerif" size="13" style="1"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
-        <Property name="opaque" type="boolean" value="true"/>
         <Property name="text" type="java.lang.String" value="Exit"/>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="focusPainted" type="boolean" value="false"/>
+        <Property name="opaque" type="boolean" value="true"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnExitActionPerformed"/>
