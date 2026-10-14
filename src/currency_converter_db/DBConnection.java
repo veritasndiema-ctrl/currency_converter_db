@@ -17,7 +17,7 @@ public class DBConnection {
     // Points to the currency_converter database (created by sql/schema.sql)
     private static final String URL = env("CC_DB_URL",
             "jdbc:mysql://localhost:3306/currency_converter?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC");
-    private static final String USER = env("CC_DB_USER", "root");
+    private static final String USER = env("CC_DB_USER", "cc_user");
     private static final String PASSWORD = env("CC_DB_PASSWORD", "kEITH2004!");
 
     static {
